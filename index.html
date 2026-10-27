@@ -4,15 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- ====================================================================
-       ATENÇÃO ESTUDANTES: 
-       Ajuste a tag <title> e a <meta description> para o nome do seu setor.
-       Exemplo: "Achados e Perdidos — InfoHub FAMINAS"
-       ==================================================================== -->
-  <title>Setor: [Nome do Setor] — InfoHub FAMINAS</title>
+  <meta name="theme-color" content="#0B1B29" />
+
+  <title>Formatura e Colação de Grau — InfoHub FAMINAS</title>
   <meta name="description"
-    content="Canal de autoatendimento institucional desenvolvido pelos discentes de Análise e Desenvolvimento de Sistemas (ADS) na disciplina de Engenharia de Software da FAMINAS." />
+    content="Guia completo e autoatendimento de Colação de Grau na FAMINAS. Requisitos acadêmicos, comparação das 3 modalidades, simulador interativo de aptidão, faixas e contatos oficiais." />
 
   <link rel="icon" type="image/png" href="./assets/images/logo-faminas.png" />
 
@@ -20,9 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Red+Hat+Display:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Red+Hat+Display:wght@500;700&family=Roboto:wght@300;400;500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
     rel="stylesheet" />
 
   <!-- Folhas de Estilo Institucionais (NÃO ALTERAR) -->
@@ -36,9 +30,11 @@
 </head>
 
 <body>
+  <!-- Link de Acessibilidade para Salto de Conteúdo (WCAG 2.1) -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
   <!-- ====================================================================
        CABEÇALHO INSTITUCIONAL OFICIAL (NÃO ALTERAR)
-       O botão de ação direciona o discente de volta ao InfoHub principal.
        ==================================================================== -->
   <header id="main-header" class="site-header">
     <div class="header-container container">
@@ -55,12 +51,8 @@
 
       <div class="header-actions">
         <!-- Botão oficial de retorno ao Hub Principal -->
-        <a 
-          href="https://infohub-faminas.vercel.app" 
-          class="btn btn-primary-highlight btn-portal" 
-          id="link-retornar-hub"
-          aria-label="Retornar à página inicial do InfoHub FAMINAS"
-        >
+        <a href="https://infohub-faminas.vercel.app" class="btn btn-primary-highlight btn-portal" id="link-retornar-hub"
+          aria-label="Retornar à página inicial do InfoHub FAMINAS">
           <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
           <span>Retornar ao InfoHub</span>
         </a>
@@ -69,191 +61,801 @@
   </header>
 
   <!-- Área Principal da Solução Setorial -->
-  <main id="main-content">
+  <main id="main-content" tabindex="-1">
     <!-- ====================================================================
-         SEÇÃO HERO INSTITUCIONAL
-         ESTUDANTES: Ajuste APENAS o Título do Setor e a Descrição do Setor.
-         As tags institucionais e badges não devem ser removidas.
+         SEÇÃO HERO INSTITUCIONAL (PADRÃO OFICIAL DO TEMPLATE)
          ==================================================================== -->
     <section id="hero" class="hero-section" aria-labelledby="hero-heading">
       <div class="hero-content container">
         <div class="hero-tag">
           <span class="material-symbols-outlined" aria-hidden="true">school</span>
-          Engenharia de Software • ADS FAMINAS
+          Engenharia de Software • ADS FAMINAS • Grupo 14
         </div>
 
-        <!-- [EDITÁVEL]: Nome do Setor -->
+        <!-- Nome do Setor (Conforme padrão do README.md) -->
         <h1 id="hero-heading" class="hero-title">
-          Setor: <span>[Nome do Setor Institucional]</span>
+          <span>Formatura e Colação de Grau</span>
         </h1>
 
-        <!-- [EDITÁVEL]: Descrição e Propósito do Setor apurados na entrevista -->
+        <!-- Descrição enxuta, direta e didática -->
         <p class="hero-description">
-          Canal unificado de autoatendimento, mapeamento de processos oficiais, orientações normativas e canais de contato homologados junto à coordenação e gestão setorial da FAMINAS.
+          Tudo o que você precisa saber sobre a Colação de Grau na FAMINAS: consulte requisitos acadêmicos, compare
+          modalidades, simule sua aptidão e acesse canais oficiais sem burocracia.
         </p>
-
-        <div class="hero-badges-group" aria-label="Informações do autoatendimento">
-          <div class="hero-badge-item">
-            <span class="material-symbols-outlined" aria-hidden="true">verified</span>
-            <span>Processos Homologados</span>
-          </div>
-          <div class="hero-badge-item">
-            <span class="material-symbols-outlined" aria-hidden="true">support_agent</span>
-            <span>Autoatendimento Discente</span>
-          </div>
-          <div class="hero-badge-item">
-            <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
-            <span>Disponível 24/7</span>
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- ====================================================================
-         ÁREA CENTRAL LIVRE PARA OS ESTUDANTES (FEATURES DO SETOR)
-         Vocês têm total liberdade para estruturar esta área central conforme
-         os requisitos, fluxos e necessidades identificados nas entrevistas.
-         
-         REQUISITO: Utilize HTML5 semântico (section, article, div, ul, details).
-         Para criar estilos novos, edite o arquivo "css/custom.css".
+         ÁREA CENTRAL LIVRE PARA OS ESTUDANTES (CONTEÚDO DINÂMICO & SINTÉTICO)
          ==================================================================== -->
-    <section id="features" class="sector-content-section" aria-labelledby="sector-content-heading">
+    <section id="features" class="sector-content-section" aria-labelledby="hero-heading">
       <div class="container">
-        
-        <!-- Cabeçalho da Seção Central -->
-        <div class="sector-section-header">
-          <div class="sector-section-tag">
-            <span class="material-symbols-outlined" aria-hidden="true">help_center</span>
-            <span>Guia Prático e Procedimentos</span>
+
+        <!-- BLOCO 1: O que é Colação de Grau? -->
+        <aside class="editorial-notice-box" aria-labelledby="aviso-marco-legal-title">
+          <div class="editorial-notice-left">
+            <div class="editorial-notice-icon" aria-hidden="true">
+              <span class="material-symbols-outlined">school</span>
+            </div>
+            <div class="editorial-notice-text">
+              <strong id="aviso-marco-legal-title">Colação de Grau: O que é?</strong>
+              <p>A colação de grau é o ato acadêmico oficial que confere o grauao estudante que concluiu todos os requisitos exigidos pelo curso. É por meio desse procedimento que o formando recebe formalmente o título acadêmico, conforme as normas da instituição de ensino. A cerimônia pode ocorrer de forma solene ou em gabinete, conforme as regras institucionais.</p>
+            </div>
           </div>
-          <h2 id="sector-content-heading" class="sector-section-title">
-            Como Podemos Ajudar Você Hoje?
-          </h2>
-          <p class="sector-section-subtitle">
-            Consulte as principais solicitações, prazos e canais de atendimento direto mapeados pela equipe discente.
-          </p>
-        </div>
-
-        <!-- EXEMPLO DE BLOCO 1: Grid de Tópicos / Serviços Frequentes -->
-        <div class="sector-grid">
-          <article class="sector-card">
-            <div class="sector-card-icon" aria-hidden="true">
-              <span class="material-symbols-outlined">assignment</span>
-            </div>
-            <h3 class="sector-card-title">Orientações e Normas</h3>
-            <p class="sector-card-text">
-              Consulte a regulamentação oficial, formulários obrigatórios e o passo a passo para abertura formal de chamados.
-            </p>
-            <a href="#fluxo" class="btn btn-outline-light" style="color: var(--color-primary-navy) !important; border-color: var(--color-border);">
-              Ver Passo a Passo
+          <div class="editorial-notice-actions">
+            <a href="#simulador" class="btn btn-primary-highlight"
+              aria-label="Verificar minha situação para a colação de grau no simulador">
+              <span class="material-symbols-outlined" aria-hidden="true">fact_check</span>
+              <span>Checar Minha Situação</span>
             </a>
-          </article>
+          </div>
+        </aside>
 
-          <article class="sector-card">
-            <div class="sector-card-icon" aria-hidden="true">
-              <span class="material-symbols-outlined">event_available</span>
-            </div>
-            <h3 class="sector-card-title">Prazos e Calendário</h3>
-            <p class="sector-card-text">
-              Fique atento às datas-limite para envio de requerimentos, renovações e homologação de documentos institucionais.
+        <!-- BLOCO 2: Simulador Interativo de Aptidão Acadêmica -->
+        <section id="simulador" class="section-block" aria-labelledby="simulador-heading">
+          <div class="sector-section-header">
+            <span class="sector-section-tag">
+              <span class="material-symbols-outlined" aria-hidden="true">fact_check</span>
+              Autoavaliação Rápida
+            </span>
+            <h2 id="simulador-heading" class="sector-section-title">
+              Simulador: Você Está Apto a Colar Grau?
+            </h2>
+            <p class="sector-section-subtitle">
+              Marque os 6 requisitos concluídos. Pendências curriculares ou documentais impedem a inclusão na Ata
+              Oficial.
             </p>
-            <a href="#prazos" class="btn btn-outline-light" style="color: var(--color-primary-navy) !important; border-color: var(--color-border);">
-              Consultar Datas
-            </a>
-          </article>
+          </div>
 
-          <article class="sector-card">
-            <div class="sector-card-icon" aria-hidden="true">
-              <span class="material-symbols-outlined">contact_phone</span>
+          <div class="simulator-card">
+            <div class="simulator-header">
+              <div class="simulator-header-text">
+                <h3 id="simulator-card-title">Checklist de Requisitos Obrigatórios</h3>
+                <p>Assinale os critérios já integralizados na sua grade curricular:</p>
+              </div>
+
+              <div class="simulator-controls-group">
+                <div class="simulator-quick-btns">
+                  <button type="button" class="btn-simulator-action" id="btn-select-all-simulator"
+                    aria-label="Marcar todos os 6 requisitos como concluídos">
+                    <span class="material-symbols-outlined" aria-hidden="true">select_all</span>
+                    <span>Marcar Todos</span>
+                  </button>
+                  <button type="button" class="btn-simulator-action btn-simulator-reset" id="btn-reset-simulator"
+                    aria-label="Limpar todas as opções assinaladas">
+                    <span class="material-symbols-outlined" aria-hidden="true">restart_alt</span>
+                    <span>Limpar Tudo</span>
+                  </button>
+                </div>
+
+                <div class="simulator-progress-wrapper">
+                  <div class="progress-label-row">
+                    <span>Integralização:</span>
+                    <strong id="simulator-percent-label">0%</strong>
+                  </div>
+                  <div class="progress-bar-track" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100" aria-label="Percentual de integralização dos requisitos para colação de grau">
+                    <div class="progress-bar-fill" id="simulator-progress-bar"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3 class="sector-card-title">Canais de Atendimento</h3>
-            <p class="sector-card-text">
-              Localização física no campus, horários de funcionamento presencial, telefone, e-mail institucional e WhatsApp oficial.
+
+            <fieldset class="simulator-checklist-fieldset">
+              <legend class="sr-only">Requisitos acadêmicos obrigatórios para colação de grau</legend>
+              <div class="simulator-checklist">
+                <label class="checklist-label" for="check-matriz">
+                  <input type="checkbox" class="checklist-checkbox" id="check-matriz" name="check-matriz"
+                    aria-describedby="desc-matriz" />
+                  <div class="checklist-text">
+                    <strong id="title-matriz">100% da Carga Horária</strong>
+                    <span id="desc-matriz">Toda a matriz curricular do curso integralizada.</span>
+                  </div>
+                </label>
+
+                <label class="checklist-label" for="check-disciplinas">
+                  <input type="checkbox" class="checklist-checkbox" id="check-disciplinas" name="check-disciplinas"
+                    aria-describedby="desc-disciplinas" />
+                  <div class="checklist-text">
+                    <strong id="title-disciplinas">Disciplinas Aprovadas</strong>
+                    <span id="desc-disciplinas">Nota e frequência mínimas sem dependências pendentes.</span>
+                  </div>
+                </label>
+
+                <label class="checklist-label" for="check-estagio">
+                  <input type="checkbox" class="checklist-checkbox" id="check-estagio" name="check-estagio"
+                    aria-describedby="desc-estagio" />
+                  <div class="checklist-text">
+                    <strong id="title-estagio">Estágio / TCC Concluídos</strong>
+                    <span id="desc-estagio">Práticas obrigatórias e trabalho final homologados.</span>
+                  </div>
+                </label>
+
+                <label class="checklist-label" for="check-horas">
+                  <input type="checkbox" class="checklist-checkbox" id="check-horas" name="check-horas"
+                    aria-describedby="desc-horas" />
+                  <div class="checklist-text">
+                    <strong id="title-horas">Horas Complementares</strong>
+                    <span id="desc-horas">Carga horária de extensão lançada e deferida no portal.</span>
+                  </div>
+                </label>
+
+                <label class="checklist-label" for="check-enade">
+                  <input type="checkbox" class="checklist-checkbox" id="check-enade" name="check-enade"
+                    aria-describedby="desc-enade" />
+                  <div class="checklist-text">
+                    <strong id="title-enade">Regularidade ENADE / ENAMED</strong>
+                    <span id="desc-enade">Situação regular perante o Ministério da Educação (MEC).</span>
+                  </div>
+                </label>
+
+                <label class="checklist-label" for="check-documentos">
+                  <input type="checkbox" class="checklist-checkbox" id="check-documentos" name="check-documentos"
+                    aria-describedby="desc-documentos" />
+                  <div class="checklist-text">
+                    <strong id="title-documentos">Documentação na Secretaria</strong>
+                    <span id="desc-documentos">Histórico escolar, certidão civil e quitações em dia.</span>
+                  </div>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="simulator-verdict" id="simulator-verdict" role="status" aria-live="polite">
+              <div class="verdict-info">
+                <span class="material-symbols-outlined verdict-icon" id="verdict-icon"
+                  aria-hidden="true">pending_actions</span>
+                <div class="verdict-text">
+                  <strong id="verdict-title">0 de 6 requisitos assinalados (0%)</strong>
+                  <p id="verdict-desc">Preencha os itens para verificar sua elegibilidade à colação de grau.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- BLOCO 3: Comparativo Sintético das 3 Modalidades -->
+        <section id="modalidades" class="section-block" aria-labelledby="modalidades-heading">
+          <div class="sector-section-header">
+            <span class="sector-section-tag">
+              <span class="material-symbols-outlined" aria-hidden="true">compare</span>
+              Escolha o seu Formato
+            </span>
+            <h2 id="modalidades-heading" class="sector-section-title">
+              As 3 Modalidades de Colação
+            </h2>
+            <p class="sector-section-subtitle">
+              Entenda em segundos as diferenças de formato, custos e procedimentos da FAMINAS:
             </p>
-            <a href="#contato" class="btn btn-outline-light" style="color: var(--color-primary-navy) !important; border-color: var(--color-border);">
-              Ver Contatos
-            </a>
-          </article>
-        </div>
+          </div>
 
-        <!-- EXEMPLO DE BLOCO 2: Fluxo Passo a Passo -->
-        <div id="fluxo" style="margin-top: 3rem; background: var(--color-bg-card); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
-          <h3 style="font-size: 1.35rem; color: var(--color-primary-navy); margin-bottom: 0.5rem;">
-            Passo a Passo do Processo Setorial
-          </h3>
-          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
-            Siga as etapas abaixo para protocolar ou resolver sua demanda com rapidez:
-          </p>
+          <div class="modalities-grid" role="region" aria-label="Comparativo das modalidades de colação">
+            <!-- Modalidade 1: Festiva -->
+            <article class="modality-card modality-card-festiva">
+              <div class="modality-badge-row">
+                <span class="modality-badge-top badge-festiva">Solene & Festiva</span>
+              </div>
+              <h3 class="modality-title">Tradicional / Festiva</h3>
+              <p class="modality-desc">
+                Solenidade comemorativa completa com convidados, becas e homenageados.
+              </p>
+              <ul class="modality-features" role="list">
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">groups</span>
+                  <span><strong>Formato:</strong> Cerimônia no Teatro FAMINAS com patrono e paraninfo.</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">payments</span>
+                  <span><strong>Custos:</strong> Financiada pela comissão à empresa de formaturas.</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">record_voice_over</span>
+                  <span><strong>Rito:</strong> Pronunciamento oficial, juramentista e entrega de láureas.</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">confirmation_number</span>
+                  <span><strong>Acesso:</strong> Convites limitados por formando conforme capacidade física.</span>
+                </li>
+              </ul>
+              <div class="modality-footer-note">
+                <span class="material-symbols-outlined" aria-hidden="true">info</span>
+                <span><strong>Organização:</strong> Sob responsabilidade da Comissão de Formatura da turma.</span>
+              </div>
+            </article>
 
-          <ol class="process-steps-list">
-            <li class="process-step-item">
-              <span class="step-number">1</span>
-              <div class="step-content">
-                <strong>Reunir a Documentação Necessária</strong>
-                <p>Verifique com antecedência os comprovantes exigidos e tenha em mãos seu número de matrícula institucional.</p>
+            <!-- Modalidade 2: Gabinete/Interna (Destaque Econômico) -->
+            <article class="modality-card modality-card-featured modality-card-gabinete">
+              <div class="modality-badge-row">
+                <span class="modality-badge-top badge-gabinete">100% Isenta de Taxa</span>
+                <span class="modality-pill-recommend">Padrão Institucional</span>
               </div>
-            </li>
-            <li class="process-step-item">
-              <span class="step-number">2</span>
-              <div class="step-content">
-                <strong>Protocolar o Requerimento</strong>
-                <p>Abra o requerimento pelo portal acadêmico ou compareça presencialmente ao setor nos horários indicados.</p>
+              <h3 class="modality-title">Interna / Gabinete</h3>
+              <p class="modality-desc">
+                Sessão institucional solene e simplificada no campus para outorga direta e objetiva do grau.
+              </p>
+              <ul class="modality-features" role="list">
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">savings</span>
+                  <span><strong>Gratuidade:</strong> 100% isenta da taxa de cerimonial (Portaria nº 5/2022).</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">event</span>
+                  <span><strong>Calendário:</strong> Datas semestrais definidas pela Secretaria Acadêmica.</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">computer</span>
+                  <span><strong>Requerimento:</strong> Solicitação direta via Portal do Aluno sem burocracia.</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span>
+                  <span><strong>Validade:</strong> Diploma digital idêntico ao da cerimônia festiva.</span>
+                </li>
+              </ul>
+              <div class="modality-footer-note highlight-note">
+                <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+                <span><strong>Indicação:</strong> Ideal para quem busca rapidez, economia e foco no registro do
+                  diploma.</span>
               </div>
-            </li>
-            <li class="process-step-item">
-              <span class="step-number">3</span>
-              <div class="step-content">
-                <strong>Acompanhar o Parecer e Retirada</strong>
-                <p>Acompanhe o status do chamado e receba a confirmação ou retirada do documento protocolado.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
+            </article>
 
-        <!-- EXEMPLO DE BLOCO 3: Perguntas Frequentes (FAQ) -->
-        <div style="margin-top: 3rem;">
-          <h3 style="font-size: 1.35rem; color: var(--color-primary-navy); margin-bottom: 1rem;">
-            Dúvidas Frequentes do Setor
-          </h3>
-          <div class="faq-accordion">
+            <!-- Modalidade 3: Especial/Urgência -->
+            <article class="modality-card modality-card-especial">
+              <div class="modality-badge-row">
+                <span class="modality-badge-top badge-especial">Casos Excepcionais</span>
+              </div>
+              <h3 class="modality-title">Situação Especial</h3>
+              <p class="modality-desc">
+                Solenidade individual ou em grupo restrito antecipada exclusivamente por urgência comprovada.
+              </p>
+              <ul class="modality-features" role="list">
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">priority_high</span>
+                  <span><strong>Requisito:</strong> Comprovar urgência (concurso público, pós ou contratação
+                    imediata).</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">policy</span>
+                  <span><strong>Decisão:</strong> Avaliação discricionária e homologação da Reitoria.</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">warning</span>
+                  <span><strong>Não automática:</strong> Excepcionalidade estrita sob análise de deferimento.</span>
+                </li>
+                <li>
+                  <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+                  <span><strong>Integralização:</strong> Cursar 100% da matriz curricular continua indispensável.</span>
+                </li>
+              </ul>
+              <div class="modality-footer-note">
+                <span class="material-symbols-outlined" aria-hidden="true">description</span>
+                <span><strong>Procedimento:</strong> Protocolo fundamentado com comprovantes na Secretaria.</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- BLOCO 4: Linha do Tempo das 4 Etapas -->
+        <section id="jornada" class="section-block" aria-labelledby="jornada-heading">
+          <div class="graduation-timeline-section">
+            <div class="sector-section-header">
+              <span class="sector-section-tag">
+                <span class="material-symbols-outlined" aria-hidden="true">timeline</span>
+                Passo a Passo Oficial
+              </span>
+              <h2 id="jornada-heading" class="sector-section-title">
+                A Jornada Oficial em 4 Etapas
+              </h2>
+              <p class="sector-section-subtitle">
+                O caminho formal desde o último período letivo até a emissão do seu diploma digital:
+              </p>
+            </div>
+
+            <ol class="graduation-timeline" aria-label="Etapas da colação de grau">
+              <li class="process-step-item">
+                <div class="step-marker-col">
+                  <span class="step-number" aria-hidden="true">01</span>
+                  <span class="step-period-badge">Último Período</span>
+                </div>
+                <div class="step-content">
+                  <div class="step-title-row">
+                    <strong>1. Conclusão da Matriz Acadêmica</strong>
+                  </div>
+                  <p>Concluir 100% da carga horária, aprovação em todas as disciplinas, entrega homologada de TCC,
+                    estágio supervisionado e deferimento das horas complementares de extensão.</p>
+                </div>
+              </li>
+
+              <li class="process-step-item">
+                <div class="step-marker-col">
+                  <span class="step-number" aria-hidden="true">02</span>
+                  <span class="step-period-badge">Até Novembro</span>
+                </div>
+                <div class="step-content">
+                  <div class="step-title-row">
+                    <strong>2. Regularização Documental na Secretaria</strong>
+                  </div>
+                  <p>Verificar na Secretaria Acadêmica pendências de documentos pessoais (RG, certidão civil de
+                    nascimento/casamento, título eleitoral, quitação militar) e histórico escolar do ensino médio.</p>
+                </div>
+              </li>
+
+              <li class="process-step-item">
+                <div class="step-marker-col">
+                  <span class="step-number" aria-hidden="true">03</span>
+                  <span class="step-period-badge">Portal do Aluno</span>
+                </div>
+                <div class="step-content">
+                  <div class="step-title-row">
+                    <strong>3. Escolha e Adesão ao Formato da Colação</strong>
+                  </div>
+                  <p>Participar da cerimônia comemorativa com a Comissão de Formatura da turma ou abrir o requerimento
+                    institucional <strong>“Colação de Grau Interna”</strong> sem custo no Portal do Aluno.</p>
+                </div>
+              </li>
+
+              <li class="process-step-item">
+                <div class="step-marker-col">
+                  <span class="step-number" aria-hidden="true">04</span>
+                  <span class="step-period-badge">Até 4 Meses</span>
+                </div>
+                <div class="step-content">
+                  <div class="step-title-row">
+                    <strong>4. Assinatura da Ata Oficial & Emissão do Diploma</strong>
+                  </div>
+                  <p>Comparecer à sessão solene e assinar a Ata Oficial de Colação de Grau (marco que confere o grau). O
+                    diploma digital com assinatura qualificada ICP-Brasil é emitido em até 4 meses.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- BLOCO 5: Explorador de Cursos, Cores de Faixa e Juramentos -->
+        <section id="cursos" class="section-block" aria-labelledby="cursos-heading">
+          <div class="sector-section-header">
+            <span class="sector-section-tag">
+              <span class="material-symbols-outlined" aria-hidden="true">local_police</span>
+              Identidade Oficial dos Cursos
+            </span>
+            <h2 id="cursos-heading" class="sector-section-title">
+              Consulte seu Curso: Faixa e Juramento
+            </h2>
+            <p class="sector-section-subtitle">
+              Selecione sua graduação para consultar a cor oficial da faixa de beca, coordenação acadêmica e o juramento
+              solene padronizado:
+            </p>
+          </div>
+
+          <div class="course-guide-container">
+            <div class="course-selector-bar">
+              <label for="course-selector-input" class="course-select-label">
+                <span class="material-symbols-outlined" aria-hidden="true">school</span>
+                <span>Curso de Graduação:</span>
+              </label>
+              <div class="course-select-wrapper">
+                <select id="course-selector-input" class="course-select-input"
+                  aria-label="Selecione o seu curso de graduação">
+                  <option value="ads" selected>Análise e Desenvolvimento de Sistemas (ADS)</option>
+                  <option value="administracao">Administração</option>
+                  <option value="arquitetura">Arquitetura e Urbanismo</option>
+                  <option value="biomedicina">Biomedicina</option>
+                  <option value="contabeis">Ciências Contábeis</option>
+                  <option value="direito">Direito</option>
+                  <option value="edfisica">Educação Física</option>
+                  <option value="enfermagem">Enfermagem</option>
+                  <option value="engcivil">Engenharia Civil</option>
+                  <option value="farmacia">Farmácia</option>
+                  <option value="fisioterapia">Fisioterapia</option>
+                  <option value="medicina">Medicina</option>
+                  <option value="veterinaria">Medicina Veterinária</option>
+                  <option value="nutricao">Nutrição</option>
+                  <option value="odontologia">Odontologia</option>
+                  <option value="psicologia">Psicologia</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="course-result-card" id="course-result-card" aria-live="polite" aria-atomic="true">
+              <div class="course-meta-top">
+                <div class="course-meta-info">
+                  <div class="course-degree-row">
+                    <span class="course-degree-badge" id="course-res-degree">Tecnólogo</span>
+                    <span class="course-campus-badge">Campus Muriaé / BH</span>
+                  </div>
+                  <h3 class="course-name-title" id="course-res-title">Análise e Desenvolvimento de Sistemas</h3>
+                </div>
+
+                <div class="sash-indicator" aria-label="Cor oficial da faixa">
+                  <span class="sash-color-swatch swatch-azul" id="course-res-swatch" aria-hidden="true"></span>
+                  <strong id="course-res-sash-name">Faixa Azul</strong>
+                </div>
+              </div>
+
+              <div class="coordinators-info" role="region" aria-label="Coordenações acadêmicas do curso">
+                <div class="coord-box">
+                  <small>Coordenação Muriaé</small>
+                  <strong id="course-res-coord-mre">Prof. Flávio Andrade Amaral Motta</strong>
+                </div>
+                <div class="coord-box">
+                  <small>Coordenação Belo Horizonte</small>
+                  <strong id="course-res-coord-bh">— (Exclusivo Muriaé)</strong>
+                </div>
+              </div>
+
+              <div class="pledge-box">
+                <div class="pledge-label-row">
+                  <span class="pledge-label">
+                    <span class="material-symbols-outlined" aria-hidden="true">history_edu</span>
+                    <span>Juramento Oficial Solene (Imutável)</span>
+                  </span>
+                  <button type="button" class="btn-copy-pledge" id="btn-copy-pledge"
+                    aria-label="Copiar texto oficial do juramento do curso">
+                    <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
+                    <span>Copiar Juramento</span>
+                  </button>
+                </div>
+                <blockquote class="pledge-quote">
+                  <p class="pledge-text" id="course-res-pledge-text">
+                    “Prometo que no exercício profissional como Tecnólogo em Análise e Desenvolvimento de Sistemas serei
+                    fiel aos preceitos da honra e da ciência, promovendo o uso e o desenvolvimento da informática em
+                    benefício do cidadão e da sociedade. ASSIM PROMETO.”
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- BLOCO 6: FAQ com Busca Rápida (Respostas Diretas) -->
+        <section id="faq" class="section-block" aria-labelledby="faq-heading">
+          <div class="sector-section-header">
+            <span class="sector-section-tag">
+              <span class="material-symbols-outlined" aria-hidden="true">quiz</span>
+              Respostas Rápidas & Autoatendimento
+            </span>
+            <h2 id="faq-heading" class="sector-section-title">
+              Perguntas Frequentes
+            </h2>
+            <p class="sector-section-subtitle">
+              Dúvidas mais comuns sobre colação, outorga de grau, taxas e emissão de diplomas respondidas objetivamente:
+            </p>
+          </div>
+
+          <!-- Barra de Busca e Ações Rápidas -->
+          <div class="faq-controls-card">
+            <div class="faq-search-box" role="search">
+              <label for="faq-search-input" class="sr-only">Pesquisar nas perguntas frequentes</label>
+              <span class="material-symbols-outlined faq-search-icon" aria-hidden="true">search</span>
+              <input type="search" class="faq-search-input" id="faq-search-input"
+                placeholder="Pesquise por diploma, taxa, ata, portal, orador, comissão..."
+                aria-label="Buscar nas perguntas frequentes" autocomplete="off" />
+              <button type="button" id="btn-clear-faq-search" class="btn-clear-search"
+                aria-label="Limpar termo de busca do FAQ" title="Limpar pesquisa" style="display: none;">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
+              </button>
+            </div>
+
+            <div class="faq-toolbar-row">
+              <div class="faq-count-feedback" id="faq-count-feedback" aria-live="polite">
+                Exibindo todas as 7 perguntas mais frequentes.
+              </div>
+              <div class="faq-accordion-actions">
+                <button type="button" class="btn-faq-action" id="btn-faq-expand-all"
+                  aria-label="Expandir todas as perguntas">
+                  <span class="material-symbols-outlined" aria-hidden="true">unfold_more</span>
+                  <span>Expandir Todas</span>
+                </button>
+                <button type="button" class="btn-faq-action" id="btn-faq-collapse-all"
+                  aria-label="Recolher todas as perguntas">
+                  <span class="material-symbols-outlined" aria-hidden="true">unfold_less</span>
+                  <span>Recolher Todas</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feedback de Busca Vazia -->
+          <div id="faq-no-results" class="faq-no-results" style="display: none;" role="status">
+            <span class="material-symbols-outlined" aria-hidden="true">search_off</span>
+            <div>
+              <strong>Nenhuma dúvida encontrada para esse termo.</strong>
+              <p>Tente termos mais amplos como <em>diploma</em>, <em>taxa</em>, <em>gabinete</em>, <em>ata</em> ou
+                <em>orador</em>.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-accordion" id="faq-accordion-list">
             <details class="faq-item">
               <summary class="faq-summary">
-                <span>Qual é o prazo médio de resposta para solicitações deste setor?</span>
+                <span>Qual a diferença entre a colação Festiva e a colação Interna?</span>
                 <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
               </summary>
               <div class="faq-content">
-                O prazo de análise institucional varia entre 2 a 5 dias úteis, dependendo da complexidade do requerimento e do calendário acadêmico vigente.
+                A <strong>Festiva</strong> é comemorativa, solene, com convidados e organizada por empresa terceirizada
+                contratada pela turma. A <strong>Interna (Gabinete)</strong> é uma sessão no campus, gratuita e focada
+                estritamente no ato oficial. Ambas concedem exatamente o mesmo grau acadêmico e conferem o mesmo diploma
+                legal.
               </div>
             </details>
+
             <details class="faq-item">
               <summary class="faq-summary">
-                <span>O atendimento presencial exige agendamento prévio?</span>
+                <span>O que me impede de colar grau e assinar a Ata Oficial?</span>
                 <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
               </summary>
               <div class="faq-content">
-                Para a maioria dos serviços o atendimento é por ordem de chegada na recepção do setor. Em períodos de pico de matrícula ou eventos especiais, recomenda-se verificar aviso oficial.
+                Pendências em disciplinas, falta de horas complementares de extensão, pendência em estágio obrigatório
+                ou TCC, irregularidade no ENADE/ENAMED ou ausência de documentos civis/escolares na Secretaria
+                Acadêmica. Sem 100% de regularidade homologada, seu nome não constará na lista oficial de outorga.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>Como solicitar a colação interna se eu não for participar da festa?</span>
+                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="faq-content">
+                Acesse o <strong>Portal do Aluno</strong> institucional e protocole o requerimento oficial
+                <strong>“Colação de Grau Interna”</strong>, respeitando as instruções da Secretaria Acadêmica e os
+                prazos limite divulgados no calendário letivo semestral.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>Existe taxa financeira para colar grau na sessão interna?</span>
+                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="faq-content">
+                <strong>Não.</strong> A Portaria institucional nº 5/2022 (Art. 11, § 1º) determina expressamente que a
+                sessão interna de colação de grau é <strong>isenta da taxa do cerimonial</strong>.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>Quando e de que forma recebo o meu diploma digital de graduação?</span>
+                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="faq-content">
+                O diploma digital é gerado automaticamente com certificação ICP-Brasil pela Secretaria após a assinatura
+                da Ata Oficial e regularização total da pasta acadêmica, com prazo de expedição e registro de
+                <strong>até 4 meses</strong>.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>A FAMINAS se responsabiliza pelo contrato firmado com a empresa da festa?</span>
+                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="faq-content">
+                <strong>Não.</strong> O contrato é firmado com natureza civil exclusivamente entre os formandos/comissão
+                e a empresa terceirizada. A FAMINAS gerencia única e estritamente o controle acadêmico, normativo e
+                legal da outorga do grau.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>Quais são as regras e limites para o discurso do orador da turma?</span>
+                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="faq-content">
+                O discurso do orador da turma possui limite estrito de <strong>3.000 caracteres e 3 minutos</strong> de
+                duração, devendo ser enviado para análise prévia do Cerimonial com antecedência mínima de 7 dias úteis.
+                O juramento, por sua vez, é fixo e padronizado pelos conselhos profissionais de cada categoria.
               </div>
             </details>
           </div>
-        </div>
+        </section>
 
-        <!-- EXEMPLO DE BLOCO 4: Banner de Contato Oficial -->
-        <div id="contato" class="contact-banner">
+        <!-- BLOCO 7: Central de Formulários e Contatos -->
+        <section id="contato" class="section-block" aria-labelledby="contato-setor-heading">
+          <div class="sector-section-header">
+            <span class="sector-section-tag">
+              <span class="material-symbols-outlined" aria-hidden="true">contact_phone</span>
+              Central de Autoatendimento
+            </span>
+            <h2 id="contato-setor-heading" class="sector-section-title">
+              Links Rápidos & Atendimento
+            </h2>
+            <p class="sector-section-subtitle">
+              Formulários oficiais do Guia do Formando e canais diretos da FAMINAS:
+            </p>
+          </div>
+
+          <div class="resources-and-contact-grid">
+            <!-- Formulários Oficiais -->
+            <div class="resource-card-block">
+              <h3 class="resource-block-title">
+                <span class="material-symbols-outlined" aria-hidden="true">assignment</span>
+                <span>Formulários Oficiais (Guia do Formando)</span>
+              </h3>
+              <p class="resource-block-subtitle">Links oficiais Microsoft Forms para submissão de dados institucionais:
+              </p>
+
+              <div class="official-links-list" role="list">
+                <a href="https://forms.office.com/r/Mua5HuKDxh" target="_blank" rel="noopener noreferrer"
+                  class="official-link-item" role="listitem">
+                  <div class="link-item-meta">
+                    <strong>Cadastro da Comissão de Formatura</strong>
+                    <span>Registro dos representantes discentes oficiais da turma</span>
+                  </div>
+                  <div class="link-icon-wrap" aria-hidden="true">
+                    <span class="material-symbols-outlined link-arrow">open_in_new</span>
+                  </div>
+                  <span class="sr-only">(abre em uma nova aba)</span>
+                </a>
+
+                <a href="https://forms.office.com/r/mhdLLSX8uS" target="_blank" rel="noopener noreferrer"
+                  class="official-link-item" role="listitem">
+                  <div class="link-item-meta">
+                    <strong>Envio do Discurso do Orador da Turma</strong>
+                    <span>Envio até 7 dias úteis antes (máximo de 3.000 caracteres)</span>
+                  </div>
+                  <div class="link-icon-wrap" aria-hidden="true">
+                    <span class="material-symbols-outlined link-arrow">open_in_new</span>
+                  </div>
+                  <span class="sr-only">(abre em uma nova aba)</span>
+                </a>
+
+                <a href="https://forms.office.com/r/AaUfd6d5uD" target="_blank" rel="noopener noreferrer"
+                  class="official-link-item" role="listitem">
+                  <div class="link-item-meta">
+                    <strong>Envio do Discurso do Paraninfo</strong>
+                    <span>Pronunciamento do padrinho ou madrinha eleito pela turma</span>
+                  </div>
+                  <div class="link-icon-wrap" aria-hidden="true">
+                    <span class="material-symbols-outlined link-arrow">open_in_new</span>
+                  </div>
+                  <span class="sr-only">(abre em uma nova aba)</span>
+                </a>
+
+                <a href="https://forms.office.com/r/6VT3DnnrTW" target="_blank" rel="noopener noreferrer"
+                  class="official-link-item" role="listitem">
+                  <div class="link-item-meta">
+                    <strong>Relação Oficial de Homenageados</strong>
+                    <span>Indicação de patrono, professor e colaboradores homenageados</span>
+                  </div>
+                  <div class="link-icon-wrap" aria-hidden="true">
+                    <span class="material-symbols-outlined link-arrow">open_in_new</span>
+                  </div>
+                  <span class="sr-only">(abre em uma nova aba)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Contatos com Cópia Rápida -->
+            <div class="resource-card-block">
+              <h3 class="resource-block-title">
+                <span class="material-symbols-outlined" aria-hidden="true">headset_mic</span>
+                <span>Canais Oficiais de Atendimento</span>
+              </h3>
+              <p class="resource-block-subtitle">Envie um e-mail direto ou clique em "Copiar" para a área de
+                transferência:</p>
+
+              <div class="contacts-list" role="list">
+                <div class="contact-channel-item" role="listitem">
+                  <div class="contact-channel-info">
+                    <strong>Comunicação Institucional & Cerimonial</strong>
+                    <a href="mailto:comunicacao@faminas.edu.br" class="contact-email-link"
+                      aria-label="Enviar e-mail para comunicacao@faminas.edu.br">
+                      <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                      <span class="contact-email-val" id="email-comunicacao">comunicacao@faminas.edu.br</span>
+                    </a>
+                  </div>
+                  <button type="button" class="contact-btn-copy" data-copy-target="email-comunicacao"
+                    aria-label="Copiar e-mail do setor de Comunicação e Cerimonial">
+                    <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
+                    <span>Copiar</span>
+                  </button>
+                </div>
+
+                <div class="contact-channel-item" role="listitem">
+                  <div class="contact-channel-info">
+                    <strong>Extensão Universitária • Campus Muriaé</strong>
+                    <a href="mailto:extensao.mre@faminas.edu.br" class="contact-email-link"
+                      aria-label="Enviar e-mail para extensao.mre@faminas.edu.br">
+                      <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                      <span class="contact-email-val" id="email-extensao-mre">extensao.mre@faminas.edu.br</span>
+                    </a>
+                  </div>
+                  <button type="button" class="contact-btn-copy" data-copy-target="email-extensao-mre"
+                    aria-label="Copiar e-mail da Extensão Muriaé">
+                    <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
+                    <span>Copiar</span>
+                  </button>
+                </div>
+
+                <div class="contact-channel-item" role="listitem">
+                  <div class="contact-channel-info">
+                    <strong>Extensão Universitária • Campus Belo Horizonte</strong>
+                    <a href="mailto:extensao.bh@faminas.edu.br" class="contact-email-link"
+                      aria-label="Enviar e-mail para extensao.bh@faminas.edu.br">
+                      <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                      <span class="contact-email-val" id="email-extensao-bh">extensao.bh@faminas.edu.br</span>
+                    </a>
+                  </div>
+                  <button type="button" class="contact-btn-copy" data-copy-target="email-extensao-bh"
+                    aria-label="Copiar e-mail da Extensão Belo Horizonte">
+                    <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
+                    <span>Copiar</span>
+                  </button>
+                </div>
+
+                <div class="contact-channel-item" role="listitem">
+                  <div class="contact-channel-info">
+                    <strong>Portal do Aluno (Requerimentos & Protocolos)</strong>
+                    <span class="contact-email-val">portal.faminas.edu.br</span>
+                  </div>
+                  <a href="https://portal.faminas.edu.br" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-primary-highlight btn-access-portal"
+                    aria-label="Acessar Portal do Aluno em nova aba">
+                    <span>Acessar</span>
+                    <span class="material-symbols-outlined" aria-hidden="true">login</span>
+                    <span class="sr-only">(abre em nova aba)</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- BLOCO 8: Banner do Marco Oficial -->
+        <section class="contact-banner" aria-labelledby="marco-oficial-heading">
+          <div class="banner-seal-wrapper" aria-hidden="true">
+            <svg width="88" height="88" viewBox="0 0 96 96" role="img" focusable="false" aria-hidden="true">
+              <circle cx="48" cy="42" r="36" fill="rgba(0, 163, 224, 0.16)" stroke="#00A3E0" stroke-width="2" />
+              <path d="M30 22 H54 L66 34 V61 H30 Z" fill="#FFFFFF" stroke="#00A3E0" stroke-width="2.5"
+                stroke-linejoin="round" />
+              <path d="M54 22 V35 H66 M37 41 H58 M37 47 H54" fill="none" stroke="#005691" stroke-width="2.5"
+                stroke-linecap="round" />
+              <circle cx="56" cy="59" r="11" fill="#005691" stroke="#FFFFFF" stroke-width="2" />
+              <path d="M52 59 L55 62 L61 55" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M49 68 L46 84 L55 79 L61 86 L63 68" fill="#00A3E0" stroke="#FFFFFF" stroke-width="2"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
           <div class="contact-banner-meta">
-            <h3>Precisa de Atendimento com a Equipe do Setor?</h3>
-            <p>Atendimento presencial no campus FAMINAS • Segunda a Sexta: 08h às 21h</p>
+            <span class="badge-pill badge-cyan">Marco Jurídico Acadêmico</span>
+            <h3 id="marco-oficial-heading">A colação acontece na Ata, a conquista é para sempre</h3>
+            <p>Regularize sua pasta na Secretaria Acadêmica e viva esse momento histórico com total tranquilidade e
+              segurança jurídica.</p>
           </div>
           <div class="contact-banner-actions">
-            <a href="mailto:atendimento@faminas.edu.br" class="btn btn-outline-light">
-              <span class="material-symbols-outlined" aria-hidden="true">mail</span>
-              <span>Enviar E-mail</span>
+            <a href="#simulador" class="btn btn-outline-light" aria-label="Ir para o simulador de aptidão">
+              <span class="material-symbols-outlined" aria-hidden="true">checklist</span>
+              <span>Testar Aptidão</span>
             </a>
-            <a href="tel:+553237297000" class="btn btn-primary-highlight">
-              <span class="material-symbols-outlined" aria-hidden="true">call</span>
-              <span>Ligar para o Setor</span>
+            <a href="#faq" class="btn btn-primary-highlight" aria-label="Ir para a seção de perguntas frequentes">
+              <span class="material-symbols-outlined" aria-hidden="true">quiz</span>
+              <span>Tirar Dúvidas</span>
             </a>
           </div>
-        </div>
+        </section>
 
       </div>
     </section>
@@ -261,7 +863,6 @@
 
   <!-- ====================================================================
        RODAPÉ INSTITUCIONAL OFICIAL (RIGOROSAMENTE INALTERADO)
-       Preserva a identidade, créditos acadêmicos de ADS e modais legais.
        ==================================================================== -->
   <footer id="main-footer" class="site-footer">
     <div class="footer-main">
@@ -275,14 +876,9 @@
         </p>
 
         <div class="footer-course-highlight">
-          <a 
-            href="https://www.unifaminas.edu.br/cursos/analise-e-desenvolvimento-de-sistemas" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="footer-course-card"
-            id="link-curso-ads"
-            aria-label="Conheça o curso de Análise e Desenvolvimento de Sistemas na UNIFAMINAS em nova janela"
-          >
+          <a href="https://www.unifaminas.edu.br/cursos/analise-e-desenvolvimento-de-sistemas" target="_blank"
+            rel="noopener noreferrer" class="footer-course-card" id="link-curso-ads"
+            aria-label="Conheça o curso de Análise e Desenvolvimento de Sistemas na UNIFAMINAS em nova janela">
             <div class="footer-course-icon" aria-hidden="true">
               <span class="material-symbols-outlined">school</span>
             </div>
